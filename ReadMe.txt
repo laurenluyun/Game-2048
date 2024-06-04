@@ -2,10 +2,10 @@ Game 2048
 
 This is a Python implementation of the game 2048.
 
-Introduction
+INTRODUCTION
 2048 a simple 1-player board game. The goal of this game is to merge tiles with the same number into a single tile with the number 2048. The user can press the arrow keys in their keyboards to shift the tiles up, down, left and right. So that all the tiles will move to that direction and tiles with the same number will combine into a single tile with twice the value. The game will be ended when 2048 is reached, or all the tiles of the grid are occupied, and shifting does not create any space. Score will be recorded updated every time there is a merge on the grid with the value merged, and user can restart or end the game at any time they want by following the given instructions. 
 
-Game Design
+DESIGN
 1.	File name - Play Game.py
 This file contains the main function to run the game by collectively calling the pre-defined classes and functions in the same repository, including GameBoard.py, Numbers.py, and MoveKeys.py. The main function uses try block to call the other predefined classes and functions to ask for the user input on the size of the grid (>= 4), display the turtle graphics with class GameBoard, keep listening for commands from the keyboard with class Movekeys, and implement updating the numbers on the grid with class Numbers. ValueError will be caught and printed to the console.
 	
@@ -66,7 +66,7 @@ This class is to make turtle listen for the keyboard inputs, then use the pre-de
 5.	method test_dictionary_postshift
 This class is to use unittest to test the main methods of class Numbers
 
-Program Features
+PROGRAM FEATURES
 1.	This program allows user input as parameter for the size of the grid in a dialog before new game starts, notifying the minimum size is 4. The program will keep asking for the user input if invalid user input is given, i.e. input is less than 4, or input is not a number
 2.	This program can automatically adjust the size of the gameboard according to the size input
 3.	This program can implement the game without crushing, including,
@@ -84,10 +84,11 @@ k)	There’s clear message on the canvas when 2048 is reached, the game will the
 l)	There’s clear message on the canvas when the game is over (all the cells are occupied and shifting does not create any space), the game will then end with losing message printed to the console.
 m)	If the user press keys other than what the game uses, the program will ask the user to give valid input – keys including four directions, E and R.
 
-Getting Started
+GETTING STARTED
 1.	To run the game, the user needs to have Python 3 installed, which can be download from the official website https://www.python.org/downloads/
 2.	Once Python is installed, all the python files in the repository can be opened, open Play Game.py file to start the game. The user also needs to install the 'turtle' module, which is included with most Python installations.
-How to Play
+
+HOW TO PLAY
 1.	When start the game, the user will see a dialog popped out on the screen asking for the size of the grid, simply type in the size of the game board and a grid of tiles with 2 or 3 random numbers will be shown on the canvas. Note, the game only accepts size greater than 3, the game will not start with non-number input, or number < 4 . Size in float will be automatically converted to integer without rounding. 
 Score will be updated whenever there's a merge with the value merged, as well as instructions to end, restart the game and how to move the cells.
 2.	To move the tiles, use the arrow keys on the keyboard - press the 'UP' arrow to move the tiles up, the 'DOWN' arrow to move them down, the 'LEFT' arrow to move them left, and the 'RIGHT' arrow to move them right.
@@ -99,7 +100,7 @@ When shift the tiles, any tiles with the same number will be merged into a singl
 7.	User can restart the game from step 1 by pressing 'R'.
 8.	There would be message on the screen showing “Invalid input, please try again!” when invalid keys are pressed during the game, invalid inputs including any other keys except for four arrow keys, E and R during the game.
 
-Acknowledgements
+ACKNOWLEDGEMENTS
 This game was inspired by the original 2048 game https://play2048.co/. The Python implementation was created by Yun Lu.
 
 
